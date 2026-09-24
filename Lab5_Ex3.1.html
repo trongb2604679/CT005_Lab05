@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5 Ex3.1 - Hiển thị nội dung đa phương tiện</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+        .description {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .media-section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .media-section h2 {
+            border-bottom: 2px solid #0056b3;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        img.infographic {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. Tiêu đề chính -->
+        <h1>LỢI ÍCH CỦA CÔNG NGHỆ SỐ TRONG HỌC TẬP</h1>
+
+        <!-- 2. Mô tả ngắn -->
+        <p class="description">
+            Trang web này tổng hợp các nội dung truyền thông bao gồm Infographic và Video ngắn 
+            giới thiệu về vai trò cũng như lợi ích vượt trội của việc ứng dụng công nghệ số trong giáo dục hiện đại.
+        </p>
+
+        <!-- 3. Phần Infographic -->
+        <div class="media-section">
+            <h2>1. Infographic Tổng Quan</h2>
+            <br>
+            <!-- LƯU Ý: Thay "infographic.png" bằng tên file/đường dẫn ảnh thực tế của bạn -->
+            <img src="Lab05_Ex2.1.png" alt="Infographic Lợi ích công nghệ số" class="infographic">
+        </div>
+
+        <!-- 4. Phần Video YouTube -->
+        <div class="media-section">
+            <h2>2. Video Giới Thiệu</h2>
+            <br>
+            <div class="video-container">
+                <!-- LƯU Ý: Thay mã video YouTube "dQw4w9WgXcQ" bằng ID video YouTube của bạn -->
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- 5. Chân trang và Ghi chú bản quyền / Nguồn AI -->
+        <footer>
+            <p>&copy; 2026 Bài thực hành Lab 05 - Nhiệm vụ 3.1.</p>
+            <p><strong>Ghi chú nguồn AI:</strong> Mã nguồn HTML được hỗ trợ tạo bởi GitHub Copilot[cite: 11]. Nội dung đa phương tiện tạo bởi Canva AI & CapCut AI[cite: 2, 3].</p>
+        </footer>
+    </div>
+
+</body>
+</html>
